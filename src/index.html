@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Angular address book</title>
+
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="angular address book">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		
+		<link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic|Noto+Serif:400,700,400italic,700italic'>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+		<!-- build:css css/style.css -->
+  		<link rel="stylesheet" type="text/css" href="../jspm_packages/github/angular/bower-material@0.11.4/angular-material.css">
+	 	<link rel="stylesheet" type="text/css" href="css/extra.css">
+	 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	 	<!-- endbuild -->
+	</head>
+	<body>
+		
+		<ng-view role="main"></ng-view>
+		
+		<script type="text/javascript" src="app/app.bundle.js"></script>
+
+		<!-- build:remove -->
+		<script type="text/javascript" src="jspm_packages/system.js"></script>
+		<script type="text/javascript" src="config.js"></script>
+		<script type="text/javascript">
+			System.import('app/app');
+		</script>
+		<!-- endbuild -->
+	</body>
+</html>

@@ -1,0 +1,6 @@
+<div layout="column" layout-fill>
+	
+    <ab-contact-form contact-details="{{::ctrl.contact}}" on-submit="ctrl.updateContact(firstName, lastName, email, address, city, zipCode, country)">
+   		<ab-contact-form-header header-title="'Update contact'" on-back="ctrl.readContact()"></ab-contact-form-header>
+    </ab-contact-form>
+</div>

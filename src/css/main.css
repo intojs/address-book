@@ -1,0 +1,22 @@
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
+}
+html {
+  font-family: 'Noto Serif', serif;
+}
+body {
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+}
+.dialog-text {
+  text-align: center;
+}
+#read-contacts .add-contacts-link {
+  color: #ffeb3b;
+}

@@ -1,0 +1,72 @@
+<div id="read-contact" layout="column" layout-fill>
+	
+	<md-toolbar role="header">
+		<div class="md-toolbar-tools">
+			<md-button class="md-icon-button" type="button" aria-label="Add contact" ng-click="ctrl.readContacts()">
+			    <md-icon md-font-set="material-icons">arrow_back</md-icon>
+			</md-button>
+			<h2>Contact details</h2>
+			<span flex></span>
+			<md-button class="md-icon-button" type="button" aria-label="Add contact" ng-click="ctrl.updateContact()">
+			    <md-icon md-font-set="material-icons">mode_edit</md-icon>
+			</md-button>
+			<md-button class="md-icon-button" type="button" aria-label="Add contact" ng-click="ctrl.deleteContact($event)">
+			    <md-icon md-font-set="material-icons">delete</md-icon>
+			</md-button>
+		</div>
+    </md-toolbar>
+
+    <md-content layout-padding>
+		<md-list>
+			<md-list-item class="md-2-line" ng-if="::ctrl.contact.firstName">
+				<div class="md-list-item-text">
+					<h3>First name</h3>
+					<p>{{::ctrl.contact.firstName}}</p>
+				</div>
+				<md-divider></md-divider>
+			</md-list-item>
+			<md-list-item class="md-2-line" ng-if="::ctrl.contact.lastName">
+				<div class="md-list-item-text">
+					<h3>Last name</h3>
+					<p>{{::ctrl.contact.lastName}}</p>
+				</div>
+				<md-divider></md-divider>
+			</md-list-item>
+			<md-list-item class="md-2-line" ng-if="::ctrl.contact.email">
+				<div class="md-list-item-text">
+					<h3>E-mail address</h3>
+					<p>{{::ctrl.contact.email}}</p>
+				</div>
+				<md-divider></md-divider>
+			</md-list-item>
+			<md-list-item class="md-2-line" ng-if="::ctrl.contact.address">
+				<div class="md-list-item-text">
+					<h3>Address</h3>
+					<p>{{::ctrl.contact.address}}</p>
+				</div>
+				<md-divider></md-divider>
+			</md-list-item>
+			<md-list-item class="md-2-line" ng-if="::ctrl.contact.city">
+				<div class="md-list-item-text">
+					<h3>City</h3>
+					<p>{{::ctrl.contact.city}}</p>
+				</div>
+				<md-divider></md-divider>
+			</md-list-item>
+			<md-list-item class="md-2-line" ng-if="::ctrl.contact.zipCode">
+				<div class="md-list-item-text">
+					<h3>Zip-code</h3>
+					<p>{{::ctrl.contact.zipCode}}</p>
+				</div>
+				<md-divider></md-divider>
+			</md-list-item>
+			<md-list-item class="md-2-line" ng-if="::ctrl.contact.country">
+				<div class="md-list-item-text">
+					<h3>Country</h3>
+					<p>{{::ctrl.contact.country}}</p>
+				</div>
+				<md-divider></md-divider>
+			</md-list-item>
+		</md-list>
+    </md-content>
+</div>

@@ -1,0 +1,55 @@
+<form name="contactForm" role="section" novalidate ng-submit="ctrl.submit(contactForm)">
+    
+    <ng-transclude></ng-transclude>
+
+    <md-content layout-padding>
+        <div layout-gt-sm="row">
+            <md-input-container class="md-block" flex-gt-sm>
+                <label>First name*</label>
+                <input type="text" name="firstName" autocomplete="off" required ng-model="ctrl.contact.firstName">
+                <div role="alert" multiple ng-messages="contactForm.firstName.$error" ng-if="contactForm.$submitted || contactForm.firstName.$touched">
+                    <div ng-message="required">First name field is required.</div>
+                </div>
+            </md-input-container>
+            <md-input-container class="md-block" flex-gt-sm>
+                <label>Last name*</label>
+                <input type="text" name="lastName" autocomplete="off" required ng-model="ctrl.contact.lastName">
+                <div role="alert" multiple ng-messages="contactForm.lastName.$error" ng-if="contactForm.$submitted || contactForm.lastName.$touched">
+                    <div ng-message="required">Last name field is required.</div>
+                </div>
+            </md-input-container>
+            <md-input-container class="md-block" flex-gt-sm>
+                <label>E-mail address*</label>
+                <input type="email" name="email" autocomplete="off" required ng-model="ctrl.contact.email">
+                 <div role="alert" multiple ng-messages="contactForm.email.$error" ng-if="contactForm.$submitted || contactForm.email.$touched">
+                    <div ng-message="required">E-mail address field is required.</div>
+                    <div ng-message="email">This doesn't look like a valid e-mail address.</div>
+                </div>
+            </md-input-container>
+        </div>
+
+        <md-input-container class="md-block">
+            <label>Address</label>
+            <input type="text" name="address" autocomplete="off" ng-model="ctrl.contact.address">
+        </md-input-container>
+
+        <div layout-gt-sm="row">
+            <md-input-container class="md-block" flex-gt-sm>
+                <label>City</label>
+                <input type="text" autocomplete="off" name="city" ng-model="ctrl.contact.city">
+            </md-input-container>
+            <md-input-container class="md-block" flex-gt-sm>
+                <label>Zip-code</label>
+                <input type="text" name="zipCode" autocomplete="off" placeholder="12345" maxlength="5" ng-model="ctrl.contact.zipCode" ng-pattern="/^[0-9]{5}$/">
+                <div role="alert" multiple ng-messages="contactForm.zipCode.$error" ng-if="contactForm.$submitted || contactForm.zipCode.$touched">
+                    <div ng-message="pattern">This doesn't look like a valid zip-code.</div>
+                </div>
+            </md-input-container>
+            <md-input-container class="md-block" flex-gt-sm>
+                <label>Country</label>
+                <input type="text" name="country" autocomplete="off" ng-model="ctrl.contact.country">
+            </md-input-container>
+        </div>
+
+    </md-content>
+</form>
