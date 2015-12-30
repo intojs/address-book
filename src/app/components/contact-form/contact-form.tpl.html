@@ -1,8 +1,8 @@
-<form name="contactForm" role="section" novalidate ng-submit="ctrl.submit(contactForm)">
+<form name="contactForm" role="section" novalidate ng-submit="ctrl.submit(contactForm)" layout="column" layout-fill>
     
     <ng-transclude></ng-transclude>
 
-    <md-content layout-padding>
+    <md-content flex layout-padding>
         <div layout-gt-sm="row">
             <md-input-container class="md-block" flex-gt-sm>
                 <label>First name*</label>

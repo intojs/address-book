@@ -7,7 +7,7 @@
   display: none !important;
 }
 html {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Noto Serif', serif !important;
 }
 body {
   overflow: hidden;

@@ -28,16 +28,18 @@ angular.module('app', [
 	states.name
 ]);
 
-var mdConf = function($mdThemingProvider) {
+var mdConf = function($mdThemingProvider, $mdGestureProvider) {
 
 	$mdThemingProvider.theme('default')
 		.primaryPalette('yellow')
 		.accentPalette('pink')
 		.warnPalette('red')
-		.backgroundPalette('grey'); 
+		.backgroundPalette('grey');
+
+	$mdGestureProvider.skipClickHijack();
 };
 
-mdConf.$inject = ['$mdThemingProvider'];
+mdConf.$inject = ['$mdThemingProvider', '$mdGestureProvider'];
 
 angular.module('app').config(mdConf);
 

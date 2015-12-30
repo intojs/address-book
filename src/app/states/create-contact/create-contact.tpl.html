@@ -1,6 +1,3 @@
-<div layout="column" layout-fill>
-	
-    <ab-contact-form on-submit="ctrl.createContact(firstName, lastName, email, address, city, zipCode, country)">
-        <ab-contact-form-header header-title="'Create contact'" on-back="ctrl.readContacts()"></ab-contact-form-header>
-    </ab-contact-form>
-</div>
+<ab-contact-form on-submit="ctrl.createContact(firstName, lastName, email, address, city, zipCode, country)">
+    <ab-contact-form-header header-title="'Create contact'" on-back="ctrl.readContacts()"></ab-contact-form-header>
+</ab-contact-form>
