@@ -2,7 +2,7 @@
 Address Book Demo
 http://address-book.intojs.com
 
-The environment requires recent versions of nodeJS and npm installed. Many npm modules use node_gyp in their build process, which can be quite a nigthmare to make it work, especially Windows OS.
+The environment requires recent versions of nodeJS and npm installed. Many npm modules use node_gyp in their build process, which can be quite a nigthmare to make it work, especially on Windows OS.
 
 Stack: gulp, karma, jamine, jspm, angular, angular material, less
 
