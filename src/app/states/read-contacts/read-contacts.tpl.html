@@ -5,7 +5,7 @@
             <h2>Address book</h2>
             <span flex></span>
             <md-button class="md-icon-button" aria-label="Add contact" ng-click="ctrl.createContact()">
-                <md-icon md-font-set="material-icons">add_box</md-icon>
+                <md-icon md-font-set="material-icons">add</md-icon>
             </md-button>
         </div>
     </md-toolbar>
@@ -18,7 +18,7 @@
         
         <md-list>
             <md-list-item class="md-2-line" ng-if="::ctrl.noContactData">
-                <md-icon md-font-set="material-icons">info</md-icon>
+                <md-icon md-font-set="material-icons">info_outline</md-icon>
                 <div class="md-list-item-text">
                     <h3>Empty address book</h3>
                     <p>You should <a class="add-contacts-link" ng-href="#/create-contact">create contacts</a></p>

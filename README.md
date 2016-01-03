@@ -2,18 +2,16 @@
 Address Book Demo
 http://address-book.intojs.com
 
-First, install the dependencies:
-	npm install
-	jspm install
+Stack: gulp, karma, jamine, jspm, angular, angular material, less
 
-Run the following commands:
-	npm run dev
-	npm run test
-	npm run build
+Install the dependencies:
 
-Stack:
-	gulp,
-	jspm
-	angular
-	angular material
-	less
+1. npm install
+
+2. jspm install
+
+Dev: npm run dev
+
+Test: npm run test
+
+Build: npm run build
