@@ -56,7 +56,10 @@
 	});
 
 	require(tasksPath + '/js-hint.js')({
-		src: basePath + '/app/**/*.js'
+		src: [
+			basePath + '/app/**/*.js',
+			'!' + basePath+'/app/**/*.spec.js'
+		]
 	});
 
 	require(tasksPath + '/less.js')({

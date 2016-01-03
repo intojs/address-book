@@ -43,7 +43,8 @@ module.exports = function (config) {
             'karma-jasmine',
             'karma-jspm',
             'karma-phantomjs-launcher',
-            'karma-phantomjs-shim'
+            'karma-phantomjs-shim',
+            'karma-chrome-launcher'
         ],
 
         port: 9876,

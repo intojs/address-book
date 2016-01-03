@@ -5,7 +5,7 @@
 import CreateContactCtrl from './create-contact.ctrl.js';
 import createContactTpl from './create-contact.tpl.html!text';
 
-var CreateContactConf = function($routeProvider) {
+var createContactConf = function($routeProvider) {
     $routeProvider.when('/create-contact', {
         template: createContactTpl,
         controllerAs: 'ctrl',
@@ -13,6 +13,6 @@ var CreateContactConf = function($routeProvider) {
     });
 };
 
-CreateContactConf.$inject = ['$routeProvider'];
+createContactConf.$inject = ['$routeProvider'];
 
-export default CreateContactConf;
+export default createContactConf;

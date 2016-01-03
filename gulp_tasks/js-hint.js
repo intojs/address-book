@@ -18,7 +18,7 @@
 			    }))
 				.pipe(jshint({
 					expr: true,
-					esnext: true,
+					esnext: true
 				}))
 				.pipe(jshint.reporter('jshint-stylish'));
 		});

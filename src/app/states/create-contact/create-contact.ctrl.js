@@ -17,12 +17,12 @@ class CreateContactCtrl {
 	}
 
 	createContact(firstName, lastName, email, address, city, zipCode, country) {			
-		var newContactId = this.ContactsServ.createContact(firstName, lastName, email, address, city, zipCode, country);
+		this.newContactId = this.ContactsServ.createContact(firstName, lastName, email, address, city, zipCode, country);
 
 		this.ContactsServ.justCreated = true;
 
 		this.$timeout(() => {
-			this.$location.path('/read-contact/' + newContactId);
+			this.$location.path('/read-contact/' + this.newContactId);
 		}, this.SettingsServ.clickDelay);
 	}
 }
